@@ -1,0 +1,2 @@
+smart_open[http]
+smart_open[s3]
