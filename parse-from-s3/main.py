@@ -7,7 +7,7 @@ s3_file = 's3://paylesshealth/381405141_beaumont-hospital-dearborn-hospital_stan
 
 def parse_from_s3():
     fs = s3fs.S3FileSystem()
-    dataset = pl.read_csv(s3_file, encoding='ISO-8859-1')
+    dataset = pl.read_csv(s3_file)
 
 
 if __name__ == '__main__':
