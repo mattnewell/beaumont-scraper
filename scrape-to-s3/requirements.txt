@@ -5,7 +5,9 @@
 #    pip-compile requirements.in
 #
 boto3==1.26.103
-    # via smart-open
+    # via
+    #   -r requirements.in
+    #   smart-open
 botocore==1.29.103
     # via
     #   boto3
