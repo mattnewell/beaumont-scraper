@@ -1,4 +1,3 @@
-
 resource "aws_iam_role" "this" {
   name = "serverless_lambda"
 
@@ -45,4 +44,10 @@ resource "aws_iam_role_policy_attachment" "lambda-execution" {
 resource "aws_iam_role_policy_attachment" "ecr-readonly" {
   role       = aws_iam_role.this.name
   policy_arn = "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly"
+}
+
+resource "aws_iam_role_policy_attachment" "s3-readonly" {
+  role       = aws_iam_role.this.name
+  # TODO: It's late, and this is REALLY BAD
+  policy_arn = "arn:aws:iam::aws:policy/AmazonS3FullAccess"
 }
