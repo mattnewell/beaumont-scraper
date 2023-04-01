@@ -22,6 +22,10 @@ jmespath==1.0.1
     # via
     #   boto3
     #   botocore
+mysql-connector-python==8.0.32
+    # via -r requirements.in
+protobuf==3.20.3
+    # via mysql-connector-python
 python-dateutil==2.8.2
     # via botocore
 requests==2.28.2

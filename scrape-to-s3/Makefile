@@ -5,7 +5,7 @@ ECR_REPO = scraper
 IMAGE_TAG = latest
 
 # Build, tag, and push the Docker image to ECR
-build_and_push: docker_build docker_tag ecr_login docker_push
+build_and_push: docker_build docker_tag ecr_login docker_push terraform_apply
 
 # Build the Docker image
 docker_build:
@@ -27,4 +27,10 @@ docker_push:
 	@echo "Pushing Docker image to ECR..."
 	docker push $(ACCOUNT_ID).dkr.ecr.$(REGION).amazonaws.com/$(ECR_REPO):$(IMAGE_TAG)
 
-.PHONY: build_and_push docker_build docker_tag ecr_login docker_push
+terraform_apply:
+	@echo "Applying terraform..."
+	cd terraform && \
+	  terraform taint aws_lambda_function.scraper && \
+	  terraform apply --auto-approve
+
+.PHONY: build_and_push docker_build docker_tag ecr_login docker_push terraform_apply

@@ -1,0 +1,20 @@
+{
+    "Records": [
+        {
+            "messageId": "0454750d-32e5-4273-b232-9473c3d60cac",
+            "receiptHandle": "AQEBN67g45OXkiIgutIaXlR/hMMJVNM5CS8EtUyQPMm1HF5tQqiJJ1H3tqO14Zz0HSh2WcZ5R9NuB5EjVgtGnVw6XlFZUmA421vwAHEGj3XxQbqGwySfZeN5+xv9VOD/RwDmAnfoT+MEHHhdb9ukkVbdtQV5+RyAdGYvawhjjV3y6sz2emxylRtxuGjn/qWAWfEgLe+4NddAmZSoJ0vvQvfJ/ykP+QPPP5VIJ8dyGD7uWfiQZdTQjKkoMBMqGctAKAUBnXO4nty/oUwtsawSMDDpMnYylDCz+B1zeMJeGQteUdkt6L24fBcuyBHbOi3Xl+TNd2Oz95cMFyPAIoYvDweJbj2QySAqz83dbVnc900INZIJaVZLaRIyUrRJgULvFqY7ZavjwVAcw2JM4oN4teINOw==",
+            "body": "{\"enrollment_id\": \"O20021002000017\", \"url\": \"https://www.tricitymed.org/wp-content/uploads/2022/11/952126937_Tri-City-Medical-Center_standardcharges.csv\"}",
+            "attributes": {
+                "ApproximateReceiveCount": "1",
+                "SentTimestamp": "1680387417705",
+                "SenderId": "AIDAIAZOSXGIQLBCPAZB6",
+                "ApproximateFirstReceiveTimestamp": "1680387417706"
+            },
+            "messageAttributes": {},
+            "md5OfBody": "72522fe018978ae78f7649c0443ded90",
+            "eventSource": "aws:sqs",
+            "eventSourceARN": "arn:aws:sqs:us-east-2:566613373177:paylesshealth-main",
+            "awsRegion": "us-east-2"
+        }
+    ]
+}

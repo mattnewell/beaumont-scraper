@@ -47,7 +47,7 @@ resource "aws_iam_role_policy_attachment" "ecr-readonly" {
 }
 
 resource "aws_iam_role_policy_attachment" "s3-readonly" {
-  role       = aws_iam_role.this.name
+  role = aws_iam_role.this.name
   # TODO: It's late, and this is REALLY BAD
   policy_arn = "arn:aws:iam::aws:policy/AmazonS3FullAccess"
 }

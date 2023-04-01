@@ -1,3 +1,4 @@
 smart_open[http]
 smart_open[s3]
 boto3
+mysql-connector-python
